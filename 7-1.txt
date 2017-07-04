@@ -1,0 +1,44 @@
+1. Why Map-reduce program is needed in Pig Programming?
+
+Pig engine will inturn converts pig script to MR to process large amounts of data
+
+2. What are advantages of pig over MapReduce?
+
+Pig is application that runs on top of MapReduce and abstracts Java MapReduce jobs away from developers.
+Pig Latin uses a lot fewer lines of code than the Java MapReduce script.
+The Pig Latin script was is easier to read for someone without a Java background.
+MapReduce jobs can written in Pig Latin.
+It is too dificult to join two data sets in MR which can be easily done in PIG
+
+3. What is pig engine and what is its importance?
+
+Pig engine acts as interpreter between Pig latin script and map reduce jobs.
+It creates an environment to execute pig scripts into series of mapreduce jobs in parallel manner.
+
+4. What are the modes of Pig execution?
+
+Local Mode - To run Pig in local mode, you need access to a single machine; all files are installed and run using your local host and file system. ...
+Mapreduce Mode - To run Pig in mapreduce mode, you need access to a Hadoop cluster and HDFS installation.
+
+5. What is grunt shell in Pig?
+
+You can run Pig three ways – using either local mode or hadoop (mapreduce) mode:
+
+Grunt Shell: Enter Pig commands manually using Pig’s interactive shell, Grunt.
+Script File: Place Pig commands in a script file and run the script.
+Embedded Program: Embed Pig commands in a host language and run the program.
+
+6. What are the features of Pig Latin language?
+
+Pig Latin is a dataflow language. Each processing step results in a new data set, or relation.
+ In input = load 'data', input is the name of the relation that results from loading the data set data. 
+
+Pig Latin is Pig's language that allows developers to sort, join, parse, transform and calculate unstructured and
+ semi-structured data in MapReduce all while using a language similar to SQL versus Java.
+A relation name is referred to as an alias. Relation names look like variables, but they are not. Once made, an assignment is permanent.
+
+7. Is Pig latin commands case sensitive?
+
+Pig Latin are not case-sensitive; for example, LOAD is equivalent to load . 
+But relation and field names are. So A = load 'foo'; is not equivalent to a = load 'foo'; .
+8. What is a data flow language?
